@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="light">
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,13 +10,9 @@
         <link rel="shortcut icon" href="../img/favicon.ico">
         <title>Лабораторная часть - Малютина Екатерина K33402</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
-        <link href="../css/fontawesome.min.css" rel="stylesheet">
-        <link href="../css/brands.min.css" rel="stylesheet">
-        <link href="../css/solid.min.css" rel="stylesheet">
-        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
-        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
-        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
         <script>hljs.highlightAll();</script> 
     </head>
@@ -26,7 +22,7 @@
             <div class="container">
                 <a class="navbar-brand" href="..">Малютина Екатерина K33402</a>
                 <!-- Expander button -->
-                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -34,8 +30,8 @@
                 <div id="navbar-collapse" class="navbar-collapse collapse">
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
-                            <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">№1: Реализация серверного приложения FastAPI</a>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">№1: Реализация серверного приложения FastAPI <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li>
@@ -55,12 +51,12 @@
 </li>
                                 </ul>
                             </li>
-                            <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">№2: Потоки. Процессы. Асинхронность.</a>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">№2: Потоки. Процессы. Асинхронность. <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="./" class="dropdown-item active" aria-current="page">Лабораторная часть</a>
+    <a href="./" class="dropdown-item active">Лабораторная часть</a>
 </li>
                                     
 <li>
@@ -68,11 +64,20 @@
 </li>
                                 </ul>
                             </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">№3: Упаковка FastAPI приложения в Docker, Работа с источниками данных и Очереди <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../lr3/" class="dropdown-item">Лабораторная часть</a>
+</li>
+                                </ul>
+                            </li>
                         </ul>
 
-                    <ul class="nav navbar-nav ms-md-auto">
+                    <ul class="nav navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
@@ -93,48 +98,48 @@
 
         <div class="container">
             <div class="row">
-                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
     <div class="navbar-header">
-        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
             <span class="fa fa-angle-down"></span>
         </button>
     </div>
 
     
-    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-bs-level="1"><a href="#_1" class="nav-link">Лабораторная часть</a>
+            <li class="nav-item" data-level="1"><a href="#_1" class="nav-link">Лабораторная часть</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-bs-level="2"><a href="#task1async1py" class="nav-link">task1/async1.py</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="2"><a href="#task1multiprocessing1py" class="nav-link">task1/multiprocessing1.py</a>
+            <li class="nav-item" data-level="2"><a href="#task1async1py" class="nav-link">task1/async1.py</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#task1threading1py" class="nav-link">task1/threading1.py</a>
+            <li class="nav-item" data-level="2"><a href="#task1multiprocessing1py" class="nav-link">task1/multiprocessing1.py</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#task2async2py" class="nav-link">task2/async2.py</a>
+            <li class="nav-item" data-level="2"><a href="#task1threading1py" class="nav-link">task1/threading1.py</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#task2multiprocessing2py" class="nav-link">task2/multiprocessing2.py</a>
+            <li class="nav-item" data-level="2"><a href="#task2async2py" class="nav-link">task2/async2.py</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#task2threading2py" class="nav-link">task2/threading2.py</a>
+            <li class="nav-item" data-level="2"><a href="#task2multiprocessing2py" class="nav-link">task2/multiprocessing2.py</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#task2datapy" class="nav-link">task2/data.py</a>
+            <li class="nav-item" data-level="2"><a href="#task2threading2py" class="nav-link">task2/threading2.py</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#task2connectionpy" class="nav-link">task2/connection.py</a>
+            <li class="nav-item" data-level="2"><a href="#task2datapy" class="nav-link">task2/data.py</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#task2connectionpy" class="nav-link">task2/connection.py</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -180,7 +185,7 @@ async def main():
 if __name__ == &quot;__main__&quot;:
     asyncio.run(main())
 </code></pre>
-<p><img alt="as1.png" src="../src/as1.png" /></p>
+<p><img alt="2as1.png" src="src%2Fas1.png" /></p>
 <h2 id="task1multiprocessing1py">task1/multiprocessing1.py</h2>
 <pre><code class="language-python">from multiprocessing import Process, Queue
 from time import time
@@ -221,7 +226,7 @@ def main():
 if __name__ == &quot;__main__&quot;:
     main()
 </code></pre>
-<p><img alt="mul1.png" src="../src/mul1.png" /></p>
+<p><img alt="2mul1.png" src="src%2Fmul1.png" /></p>
 <h2 id="task1threading1py">task1/threading1.py</h2>
 <pre><code class="language-python">import threading
 from time import time
@@ -243,7 +248,7 @@ def main():
     for i in range(thread_count):  # проходимся циклом и запускаем потоки
         start = i * numbers_per_thread + 1  # первый индекс вычисляемого интервала
         end = start + numbers_per_thread - 1  # последний индекс вычисляемого интервала
-        t = threading.Thread(target=calculate_sum, args=(start, end, results))  # создаем поток, передаем функцию и ее параметры
+        t = threading.Thread(target=calculate_sum, args=(start, end, results, i))  # создаем поток, передаем функцию и ее параметры
         threads.append(t)  # включаем поток в наш список, чтобы потом ждать его завершения
         t.start()  # запускаем поток
 
@@ -259,7 +264,7 @@ def main():
 if __name__ == &quot;__main__&quot;:
     main()
 </code></pre>
-<p><img alt="thr1.png" src="../src/thr1.png" /></p>
+<p><img alt="2thr1.png" src="src%2Fthr1.png" /></p>
 <h2 id="task2async2py">task2/async2.py</h2>
 <pre><code class="language-python">import asyncio
 import time
@@ -315,7 +320,7 @@ if __name__ == '__main__':
     end_time = time.time()  # засекаем конечное время
     print(f&quot;Время выполнения async: {end_time - start_time} секунд&quot;)  # выводим время выполнения
 </code></pre>
-<p><img alt="as2.png" src="../src/as2.png" /></p>
+<p><img alt="2as2.png" src="src%2Fas2.png" /></p>
 <h2 id="task2multiprocessing2py">task2/multiprocessing2.py</h2>
 <pre><code class="language-python">import multiprocessing
 import time
@@ -371,7 +376,7 @@ if __name__ == '__main__':
     end_time = time.time()  # засекаем конечное время
     print(f&quot;Время выполнения multiprocessing: {end_time - start_time} секунд&quot;)  # выводим время выполнения
 </code></pre>
-<p><img alt="mul2.png" src="../src/mul2.png" /></p>
+<p><img alt="2mul2.png" src="src%2Fmul2.png" /></p>
 <h2 id="task2threading2py">task2/threading2.py</h2>
 <pre><code class="language-python">import threading
 import time
@@ -428,7 +433,7 @@ if __name__ == '__main__':
     end_time = time.time()  # засекаем конечное время
     print(f&quot;Время выполнения threading: {end_time - start_time} секунд&quot;)  # выводим время выполнения
 </code></pre>
-<p><img alt="thr2.png" src="../src/thr2.png" /></p>
+<p><img alt="2thr2.png" src="src%2Fthr2.png" /></p>
 <h2 id="task2datapy">task2/data.py</h2>
 <pre><code class="language-python"># Список всех ссылок, по которым мы будем собирать данные
 URLs = [
@@ -450,7 +455,7 @@ number_of_threads = 3
 class DBConn:
     # SQL команда для вставки книг, %s будут заменять на переданные параметры
     # public - схема в бд, books - таблица внутри схемы
-    INSERT_SQL = &quot;&quot;&quot;INSERT INTO public.books(title, price) VALUES (%s, %s)&quot;&quot;&quot;
+    INSERT_SQL = &quot;&quot;&quot;INSERT INTO public.books(title, price) VALUES (%s, %s);&quot;&quot;&quot;
 
     # Аннотация/декоратор статического метода - метод, который не привязан к состоянию экземпляра или класса
     # (не нужна ссылка на сам класс 'self')
@@ -465,7 +470,7 @@ class DBConn:
         )  # подключаемся к этой бд и возвращаем эту связь
         return conn
 </code></pre>
-<p><img alt="db.png" src="../src/db.png" /></p></div>
+<p><img alt="2db.png" src="src%2Fdb.png" /></p></div>
             </div>
         </div>
 
@@ -473,7 +478,8 @@ class DBConn:
             <hr>
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
-        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script src="../js/jquery-3.6.0.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
         <script>
             var base_url = "..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
@@ -486,7 +492,7 @@ class DBConn:
         <div class="modal-content">
             <div class="modal-header">
                 <h4 class="modal-title" id="searchModalLabel">Search</h4>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
             </div>
             <div class="modal-body">
                 <p>From here you can search these documents. Enter your search terms below.</p>
@@ -506,7 +512,7 @@ class DBConn:
         <div class="modal-content">
             <div class="modal-header">
                 <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
             </div>
             <div class="modal-body">
               <table class="table">
